@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>VELOCITY — Guide · How this was built</title>
-<meta name="description" content="How the VELOCITY site was built by Fable: a self-typing PR-review terminal, a scanning dot-grid canvas, GSAP motion, and static hosting on GitHub Pages." />
+<meta name="description" content="How the VELOCITY site was built by Formwork: a self-typing PR-review terminal, a scanning dot-grid canvas, GSAP motion, and static hosting on GitHub Pages." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -63,7 +63,7 @@
 
   <span class="tag">Build guide · Site 24 of 25</span>
   <h1>A developer tool that <em>reviews itself</em> on the way in.</h1>
-  <p class="lede">VELOCITY is one of 25 sites designed and built by Fable to show what a modern web front-end
+  <p class="lede">VELOCITY is one of 25 sites designed and built by Formwork to show what a modern web front-end
     can feel like. This one is the "grounded in what actually ships" reference — crisp, fast, motion-forward.
     Here is exactly how it was made.</p>
 
@@ -123,8 +123,8 @@
   <h2>Ship it on GitHub Pages</h2>
   <p>The site is fully static, so hosting is three commands:</p>
   <pre><code>git init -b main &amp;&amp; git add -A &amp;&amp; git commit -m "ship"
-gh repo create fable-velocity --public --source=. --push
-gh api --method POST /repos/OWNER/fable-velocity/pages \
+gh repo create formwork-velocity --public --source=. --push
+gh api --method POST /repos/OWNER/formwork-velocity/pages \
   -f 'source[branch]=main' -f 'source[path]=/'</code></pre>
   <p>Use <strong>relative paths</strong> (<code>./main.js</code>, not <code>/main.js</code>) — project Pages live under
     <code>/repo-name/</code>. Drop an empty <code>.nojekyll</code> file so every asset serves verbatim.</p>
@@ -134,7 +134,7 @@ gh api --method POST /repos/OWNER/fable-velocity/pages \
     and static hosting. The other 24 sites swap the central technique — shaders, kinetic type, 3D — but the
     discipline is the same.</p>
 
-  <footer>Designed &amp; built by <strong>Fable</strong> · Part of a 25-site showcase · <a href="../">Return to VELOCITY →</a></footer>
+  <footer>Designed &amp; built by <strong>Formwork</strong> · Part of a 25-site showcase · <a href="../">Return to VELOCITY →</a></footer>
 </div>
 </body>
 </html>
